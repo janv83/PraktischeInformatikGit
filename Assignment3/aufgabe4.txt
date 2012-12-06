@@ -1,0 +1,3 @@
+Die Klasse wird getestet indem Grenzfälle angewandt werden, wie zB das erste oder letze Element suchen, in einer leeren Liste suchen, ganz voren/hinten Einfügen, etc... Auch wären Unit Tests für die einzelnen Funktionen denkbar (da hier aber nur insert und search existiert, halte ich das für einen Overkill)
+
+Wiederverwendbarkeit wird durch ein generelles Interface und Templates gewährleistet.

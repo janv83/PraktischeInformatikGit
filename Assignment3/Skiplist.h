@@ -9,26 +9,27 @@
 
 #ifndef SKIPLIST_H
 #define SKIPLIST_H
-
+template <typename my_type>
 class Skiplist {
 
 public:
 	
 	Skiplist(int size);
-	~Skiplist() { delete root; }
+	~Skiplist();
 
-	bool insert(double val);
-	Node* search(double search_val);
+	bool insert(my_type insert_val);
+	Node<my_type>* search(my_type search_val);
 	void print();
+	void print_vis();
 
-	Node* root;
+	Node<my_type>* root;
 
 public:
 
 	int max_level;
 	double p;
 
-	std::vector<Node*> get_next_vector(int new_level, double insert_val);
+	std::vector<Node<my_type>*> get_next_vector(int new_level, my_type insert_val);
 	int calc_random_level();
 };
 

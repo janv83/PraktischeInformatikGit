@@ -131,6 +131,9 @@ void Skiplist<my_type>::print()
 			print_node = print_node->get_next(0);
 			std::cout << "Node " << cnt++ << " Value: " << print_node->get_content() << " Level: " << print_node->get_level() << std::endl;
 		}
+
+		int i = cnt;
+		cnt = cnt + 1; //fuck you gcc
 	}
 	else
 	{
